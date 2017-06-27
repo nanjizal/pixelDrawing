@@ -3,7 +3,7 @@ import pixelDrawing.*;
 import hxPixels.Pixels;
 
 using pixelDrawing.Plot;
-class PixelQuadratic implements IPixelShape {
+class Quadratic implements IPixelShape {
     public var pixels: Pixels;
     var dxc: Float;
     var dyc: Float;
