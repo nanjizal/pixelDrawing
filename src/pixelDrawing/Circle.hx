@@ -1,4 +1,4 @@
-package pixleDrawing;
+package pixelDrawing;
 import hxPixels.Pixels;
 import pixelDrawing.*;
 

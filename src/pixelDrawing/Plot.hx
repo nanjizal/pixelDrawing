@@ -730,7 +730,7 @@ class Plot {
                 fy2 *= fy0;
             }
             if( x0 != x3 || y0 != y3 ){                            // segment t1 - t2
-                plotCubicBezierSeg( pixels, x0,y0, x0 + fx1, y0 + fy1, x0 + fx2, y0 + fy2, x3, y3, col, alpha );
+                plotCubicBezierSeg( pixels, x0, y0, x0 + fx1, y0 + fy1, x0 + fx2, y0 + fy2, x3, y3, col, alpha );
             }
             x0 = x3;
             y0 = y3;
@@ -919,9 +919,9 @@ class Plot {
         var dy: Float;
         var err: Float;
         var ed: Float;
-        var cur: Float = xx*sy - yy*sx;     // curvature
-
-        if( xx*sx <= 0 && yy*sy <= 0 ){} else { trace( 'Failed to plotQuadBezierSegAA' ); return; }      // sign of gradient must not change
+        var cur: Float =  xx*sy - yy*sx;     // curvature
+        
+        //if( xx*sx <= 0 && yy*sy <= 0 ){} else { trace( 'Failed to plotQuadBezierSegAA' ); return; }      // sign of gradient must not change
 
         if( sx*sx + sy*sy > xx*xx + yy*yy ){     // begin with longer part
             x2 = x0;
