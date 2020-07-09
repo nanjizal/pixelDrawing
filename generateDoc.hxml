@@ -1,0 +1,5 @@
+-D haxe4
+-cmd haxe generateCpp.hxml
+-cmd haxelib run dox -i upkeep --title "pixelDrawing API documentation" -D themeColor 0xCC3300 -D source-path https://github.com/nanjizal/pixelDrawing/tree/master/src/ --toplevel-package pixelDrawing
+-cmd cd pages
+-cmd open index.html
